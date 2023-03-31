@@ -1,7 +1,7 @@
 let x = document.querySelector(".x"); // Em relação ao placar
 let o = document.querySelector(".o"); // Em relação ao placar
-let boxes = document.querySelectorAll(".box"); 
-let buttons = document.querySelectorAll("#buttons-container button");
+let boxes = document.querySelectorAll(".box"); // As caixas
+let buttons = document.querySelectorAll("#buttons-container button"); // Os butões do jogo
 let messageContainer = document.querySelector("#message");
 let messageText = document.querySelector("#message p");
 let secondPlayer;
@@ -14,7 +14,17 @@ let player2 = 0;
 for(let i = 0; i < boxes.length; i++){
 
     // quando alguém clica na caixa
-    boxes[i].addEventListener("click", function()){
-        
-    }
+    boxes[i].addEventListener("click", function(){
+       
+        let el;
+
+        if(player1 == player2){
+            // x
+            el = x;
+        }else{
+            // o
+            el = o;
+        }
+        this.
+    });
 }
