@@ -25,6 +25,17 @@ for(let i = 0; i < boxes.length; i++){
             // o
             el = o;
         }
-        this.
+
+        let cloneEl = el.cloneNode(true);
+
+        this.appendChild(cloneEl); // Adicionando o elemento na caixa
+
+        // Computar a jogada
+        if(player1 == player2){
+            player1++;
+        } else{
+            player2++;
+        }
+
     });
 }
